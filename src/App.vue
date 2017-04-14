@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="content">
-      <router-view></router-view>
+      <router-view :seller="seller"></router-view>
     </div>
   </div>
 </template>
@@ -34,10 +34,8 @@
         response = response.data
         if (response.errno === ERR_OK) {
           this.seller = response.data
-          console.log(response.data)
         }
       }, response => {
-        console.log(response)
       })
     },
     components: {
