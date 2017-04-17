@@ -11,7 +11,7 @@
         <div class="price" :class="{ 'highlight' : totalPrice > 0 }">￥{{ totalPrice }}元</div>
         <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
       </div>
-      <div class="content-right">
+      <div class="content-right" @click.stop.prevent="pay">
         <div class="pay" :class="payClass">
           {{ payDesc }}
         </div>
@@ -30,9 +30,9 @@
       <div class="shopcart-list" v-show="listShow">
         <div class="list-header">
           <h1 class="title">购物车</h1>
-          <span class="empty">清空</span>
+          <span class="empty" @click="empty">清空</span>
         </div>
-        <div class="list-content">
+        <div class="list-content" ref="listContent">
           <ul>
             <li class="food" v-for="food in selectFoods">
               <span class="name">{{ food.name }}</span>
@@ -40,18 +40,22 @@
                 <span>￥{{ food.price * food.count }}</span>
               </div>
               <div class="cartcontrol-wrapper">
-                <cartcontrol :food="food"></cartcontrol>
+                <cartcontrol @add="addFood" :food="food"></cartcontrol>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </transition>
+    <transition name="fade">
+      <div class="list-mask" @click="hideList" v-show="listShow"></div>
+    </transition>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import cartcontrol from 'components/cartcontrol/cartcontrol'
+  import BScroll from 'better-scroll'
 
   export default {
     props: {
@@ -137,7 +141,17 @@
           return false
         }
         let show = !this.fold
-        console.log('ListShow 情况 = ' + show)
+        if (show) {
+          this.$nextTick(() => {
+            if (!this.scroll) {
+              this.scroll = new BScroll(this.$refs.listContent, {
+                click: true
+              })
+            } else {
+              this.scroll.refresh()
+            }
+          })
+        }
         return show
       }
     },
@@ -159,6 +173,23 @@
         }
         this.fold = !this.fold
         console.log('food = ' + this.fold)
+      },
+      hideList () {
+        this.fold = true
+      },
+      empty () {
+        this.selectFoods.forEach((food) => {
+          food.count = 0
+        })
+      },
+      pay () {
+        if (this.totalPrice < this.minPrice) {
+          return
+        }
+        window.alert(`支付${this.totalPrice}元`)
+      },
+      addFood (target) {
+        this.drop(target)
       },
       beforeDrop (el) {
         let count = this.balls.length
@@ -358,4 +389,19 @@
             position: absolute
             right: 0
             bottom: 6px
+    .list-mask
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: -2
+      backdrop-fileter: blur(10px)
+      opacity: 1
+      background: rgba(7, 17, 27, 0.6)
+      &.fade-enter-active, &.fade-leave-active
+       transition: all 0.5s
+      &.fade-enter, &.fade-leave-active
+       opacity: 0
+       background: rgba(7, 17, 27, 0)
 </style>
