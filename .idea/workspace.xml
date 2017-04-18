@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93a5459-5469-406e-85e5-b254f83ed926" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/split/split.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/food/food.vue" afterPath="$PROJECT_DIR$/src/components/food/food.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,8 +62,8 @@
       <file leaf-file-name="food.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="179" column="22" lean-forward="false" selection-start-line="179" selection-start-column="22" selection-end-line="179" selection-end-column="22" />
+            <state relative-caret-position="399">
+              <caret line="185" column="22" lean-forward="true" selection-start-line="185" selection-start-column="22" selection-end-line="185" selection-end-column="22" />
               <folding>
                 <element signature="e#1377#1412#0" expanded="true" />
               </folding>
@@ -587,12 +585,12 @@
       <workItem from="1492155324455" duration="1686000" />
       <workItem from="1492161019522" duration="1965000" />
       <workItem from="1492310620523" duration="22139000" />
-      <workItem from="1492473011256" duration="1106000" />
+      <workItem from="1492473011256" duration="1670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83770000" />
+    <option name="totallyTimeSpent" value="84334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="711" extended-state="6" />
@@ -963,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="179" column="22" lean-forward="false" selection-start-line="179" selection-start-column="22" selection-end-line="179" selection-end-column="22" />
+        <state relative-caret-position="399">
+          <caret line="185" column="22" lean-forward="true" selection-start-line="185" selection-start-column="22" selection-end-line="185" selection-end-column="22" />
           <folding>
             <element signature="e#1377#1412#0" expanded="true" />
           </folding>

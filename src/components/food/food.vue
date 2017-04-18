@@ -174,8 +174,16 @@
         &.fade-enter, &.fade-leave-active
           opacity: 0
           z-index: -1
-      .info
-        padding: 18px
-        .title
-          line-height:
+    .info
+      padding: 18px
+      .title
+        line-height: 14px
+        margin-bottom: 6px
+        font-size: 14px
+        color: rgb(7, 17, 27)
+      .text
+        line-height: 24px
+        padding: 0 8px
+        font-size: 12px
+        color: rgb(77, 85, 93)
 </style>
