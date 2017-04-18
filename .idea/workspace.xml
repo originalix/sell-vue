@@ -67,8 +67,8 @@
       <file leaf-file-name="food.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="136" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
+            <state relative-caret-position="565">
+              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="298" selection-end-column="31" />
               <folding>
                 <element signature="e#7127#7994#0" expanded="false" />
               </folding>
@@ -79,10 +79,11 @@
       <file leaf-file-name="ratings.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ratings/ratings.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="2657">
+              <caret line="188" column="19" lean-forward="true" selection-start-line="188" selection-start-column="19" selection-end-line="188" selection-end-column="19" />
               <folding>
-                <element signature="e#1340#1379#0" expanded="true" />
+                <element signature="e#2044#2079#0" expanded="true" />
+                <element signature="e#5397#6264#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -569,12 +570,12 @@
       <workItem from="1492473011256" duration="8249000" />
       <workItem from="1492492262105" duration="3848000" />
       <workItem from="1492498436638" duration="1903000" />
-      <workItem from="1492503075596" duration="3001000" />
+      <workItem from="1492503075596" duration="3491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99665000" />
+    <option name="totallyTimeSpent" value="100155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="6" />
@@ -950,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="136" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
+        <state relative-caret-position="565">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="298" selection-end-column="31" />
           <folding>
             <element signature="e#7127#7994#0" expanded="false" />
           </folding>
@@ -960,10 +961,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ratings/ratings.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        <state relative-caret-position="2657">
+          <caret line="188" column="19" lean-forward="true" selection-start-line="188" selection-start-column="19" selection-end-line="188" selection-end-column="19" />
           <folding>
-            <element signature="e#1340#1379#0" expanded="true" />
+            <element signature="e#2044#2079#0" expanded="true" />
+            <element signature="e#5397#6264#0" expanded="false" />
           </folding>
         </state>
       </provider>
