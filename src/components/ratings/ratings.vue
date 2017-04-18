@@ -37,7 +37,7 @@
   import ratingselect from 'components/ratingselect/ratingselect'
   import split from 'components/split/split'
 
-//  const ALL = 2
+  const ALL = 2
   const ERR_OK = 0
 
   export default {
@@ -49,7 +49,8 @@
     data () {
       return {
         ratings: [],
-        selectType: true
+        selectType: ALL,
+        onlyContent: true
       }
     },
     created () {
@@ -64,6 +65,30 @@
           })
         }
       })
+    },
+    methods: {
+      needShow (type, text) {
+        if (this.onlyContent && !text) {
+          return false
+        }
+        if (this.selectType === ALL) {
+          return true
+        } else {
+          return type === this.selectType
+        }
+      },
+      selectRating (type) {
+        this.selectType = type
+        this.$nextTick(() => {
+          this.scroll.refresh()
+        })
+      },
+      toggleContent () {
+        this.onlyContent = !this.onlyContent
+        this.$nextTick(() => {
+          this.scroll.refresh()
+        })
+      }
     },
     components: {
       star,
