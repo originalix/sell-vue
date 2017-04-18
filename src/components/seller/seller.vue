@@ -28,6 +28,10 @@
             </div>
           </li>
         </ul>
+        <div class="favorite">
+          <span class="icon-favorite"></span>
+          <span class="text"></span>
+        </div>
       </div>
       <split></split>
       <div class="bulletin">公告</div>
