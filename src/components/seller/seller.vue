@@ -28,8 +28,8 @@
             </div>
           </li>
         </ul>
-        <div class="favorite">
-          <span class="icon-favorite"></span>
+        <div class="favorite" @click="toggleFavorite">
+          <span class="icon-favorite" :class="{'active':favorite}"></span>
           <span class="text">{{ favoriteText }}</span>
         </div>
       </div>
@@ -44,7 +44,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import {loadFromLocal} from 'common/js/store'
+  import {saveToLocal, loadFromLocal} from 'common/js/store'
   import split from 'components/split/split'
   import star from 'components/star/star'
 
@@ -64,6 +64,12 @@
     computed: {
       favoriteText () {
         return this.favorite ? '已收藏' : '收藏'
+      }
+    },
+    methods: {
+      toggleFavorite (event) {
+        this.favorite = !this.favorite
+        saveToLocal(this.seller.id, 'favorite', this.favorite)
       }
     },
     components: {
