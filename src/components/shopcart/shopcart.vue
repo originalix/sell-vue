@@ -137,7 +137,6 @@
       listShow () {
         if (!this.totalCount) {
           this.fold = true
-          console.log('关闭ListShow')
           return false
         }
         let show = !this.fold

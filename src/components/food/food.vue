@@ -33,7 +33,7 @@
         <split></split>
         <div class="rating">
           <h1 class="title">商品评价</h1>
-          <ratingselect></ratingselect>
+          <ratingselect :selectType="selectType" :onlyContent="onlyContent" :desc="desc" :ratings="food.ratings"></ratingselect>
         </div>
       </div>
     </div>
@@ -47,6 +47,10 @@
   import split from 'components/split/split'
   import ratingselect from 'components/ratingselect/ratingselect'
 
+  // const POSITIVE = 0
+  // const NEGATIVE = 1
+  const ALL = 2
+
   export default {
     props: {
       food: {
@@ -55,7 +59,14 @@
     },
     data () {
       return {
-        showFlag: false
+        showFlag: false,
+        selectType: ALL,
+        onlyContent: true,
+        desc: {
+          all: '全部',
+          positive: '推荐',
+          negative: '吐槽'
+        }
       }
     },
     methods: {
@@ -192,4 +203,11 @@
         padding: 0 8px
         font-size: 12px
         color: rgb(77, 85, 93)
+    .rating
+      padding-top: 18px
+      .title
+        line-height: 14px
+        margin-left: 18px
+        font-size: 14px
+        color: rgb(7, 17, 27)
 </style>
