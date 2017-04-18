@@ -33,7 +33,7 @@
         <split></split>
         <div class="rating">
           <h1 class="title">商品评价</h1>
-          <ratingselect :selectType="selectType" :onlyContent="onlyContent" :desc="desc" :ratings="food.ratings"></ratingselect>
+          <ratingselect @select="selectRating" @toggle="toggleContent" :selectType="selectType" :onlyContent="onlyContent" :desc="desc" :ratings="food.ratings"></ratingselect>
         </div>
       </div>
     </div>
@@ -94,6 +94,18 @@
       },
       addFood (target) {
         this.$emit('add', target)
+      },
+      selectRating (type) {
+        this.selectType = type
+        this.$nextTick(() => {
+          this.scroll.refresh()
+        })
+      },
+      toggleContent () {
+        this.onlyContent = !this.onlyContent
+        this.$nextTick(() => {
+          this.scroll.refresh()
+        })
       }
     },
     components: {
