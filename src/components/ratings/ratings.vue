@@ -1,5 +1,5 @@
 <template>
-  <div class="ratings">
+  <div class="ratings" ref="ratings">
     <div class="ratings-content">
       <div class="overview">
         <div class="overview-left">
@@ -25,22 +25,45 @@
         </div>
       </div>
       <split></split>
+      <ratingselect @select="selectRating" @toggle="toggleContent" :selectType="selectType" :onlyContent="onlyContent" :ratings="ratings"></ratingselect>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  //  import BScroll from 'better-scroll'
+  import BScroll from 'better-scroll'
   //  import {formatDate} from 'common/js/date'
   import star from 'components/star/star'
   import ratingselect from 'components/ratingselect/ratingselect'
   import split from 'components/split/split'
+
+//  const ALL = 2
+  const ERR_OK = 0
 
   export default {
     props: {
       seller: {
         type: Object
       }
+    },
+    data () {
+      return {
+        ratings: [],
+        selectType: true
+      }
+    },
+    created () {
+      this.$http.get('/api/ratings').then((response) => {
+        response = response.data
+        if (response.errno === ERR_OK) {
+          this.ratings = response.data
+          this.$nextTick(() => {
+            this.scroll = new BScroll(this.$refs.ratings, {
+              click: true
+            })
+          })
+        }
+      })
     },
     components: {
       star,
