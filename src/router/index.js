@@ -7,7 +7,7 @@ import Seller from '@/components/seller/seller'
 Vue.use(Router)
 
 const routes = [
-  { path: '/goods', component: Goods },
+  { path: '/', component: Goods },
   { path: '/ratings', component: Ratings },
   { path: '/seller', component: Seller }
 ]
