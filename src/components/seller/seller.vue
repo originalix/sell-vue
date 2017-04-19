@@ -86,7 +86,7 @@
         favorite: (() => {
           return loadFromLocal(this.seller.id, 'favorite', false)
         })(),
-        property: {
+        test: {
           id: (() => {
             let queryParam = urlParse()
             console.log(queryParam)
