@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f93a5459-5469-406e-85e5-b254f83ed926" name="Default" comment="" />
+    <list default="true" id="f93a5459-5469-406e-85e5-b254f83ed926" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prod.server.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -84,11 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.prod.conf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.prod.conf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-310">
-              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="-512">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prod.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -351,20 +363,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,12 +644,12 @@
       <workItem from="1492508565544" duration="491000" />
       <workItem from="1492555994939" duration="9460000" />
       <workItem from="1492594602924" duration="1463000" />
-      <workItem from="1492642762194" duration="1606000" />
+      <workItem from="1492642762194" duration="1825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113668000" />
+    <option name="totallyTimeSpent" value="113887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="711" extended-state="6" />
@@ -710,11 +708,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/img/star36_half@3x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/img/star36_half@2x.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1129,8 +1122,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="-512">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prod.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
