@@ -103,8 +103,17 @@
         })
       }
     },
+    mounted () {
+      this.$nextTick(() => {
+        this._initScroll()
+        this._initPics()
+      })
+    },
     methods: {
       toggleFavorite (event) {
+//        if (!event._constructed) {
+//          return
+//        }
         this.favorite = !this.favorite
         saveToLocal(this.seller.id, 'favorite', this.favorite)
       },
