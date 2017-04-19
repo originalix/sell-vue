@@ -33,12 +33,13 @@
       <file leaf-file-name="seller.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/seller/seller.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+            <state relative-caret-position="1243">
+              <caret line="293" column="23" lean-forward="true" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
               <folding>
-                <element signature="e#2262#2297#0" expanded="true" />
-                <element signature="e#4267#5791#0" expanded="false" />
-                <element signature="e#5812#6944#0" expanded="false" />
+                <element signature="e#2405#2440#0" expanded="true" />
+                <element signature="e#4410#5934#0" expanded="false" />
+                <element signature="e#5955#7088#0" expanded="false" />
+                <element signature="e#7105#7555#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,6 +69,13 @@
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="外卖06_商家页.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/外卖06_商家页.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -616,12 +624,12 @@
       <workItem from="1492498436638" duration="1903000" />
       <workItem from="1492503075596" duration="3984000" />
       <workItem from="1492508565544" duration="491000" />
-      <workItem from="1492555994939" duration="8588000" />
+      <workItem from="1492555994939" duration="9189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109727000" />
+    <option name="totallyTimeSpent" value="110328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="991" extended-state="6" />
@@ -1008,12 +1016,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/seller/seller.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        <state relative-caret-position="1243">
+          <caret line="293" column="23" lean-forward="true" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
           <folding>
-            <element signature="e#2262#2297#0" expanded="true" />
-            <element signature="e#4267#5791#0" expanded="false" />
-            <element signature="e#5812#6944#0" expanded="false" />
+            <element signature="e#2405#2440#0" expanded="true" />
+            <element signature="e#4410#5934#0" expanded="false" />
+            <element signature="e#5955#7088#0" expanded="false" />
+            <element signature="e#7105#7555#0" expanded="false" />
           </folding>
         </state>
       </provider>
