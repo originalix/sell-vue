@@ -70,6 +70,7 @@
 
 <script type="text/ecmascript-6">
   import BScroll from 'better-scroll'
+  import {urlParse} from 'common/js/util'
   import {saveToLocal, loadFromLocal} from 'common/js/store'
   import split from 'components/split/split'
   import star from 'components/star/star'
@@ -84,7 +85,14 @@
       return {
         favorite: (() => {
           return loadFromLocal(this.seller.id, 'favorite', false)
-        })()
+        })(),
+        property: {
+          id: (() => {
+            let queryParam = urlParse()
+            console.log(queryParam)
+            return queryParam.id
+          })()
+        }
       }
     },
     computed: {
