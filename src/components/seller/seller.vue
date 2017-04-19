@@ -1,5 +1,5 @@
 <template>
-  <div class="seller">
+  <div class="seller" ref="seller">
     <div class="seller-content">
       <div class="overview">
         <h1 class="title">{{ seller.name }}</h1>
@@ -55,6 +55,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import BScroll from 'better-scroll'
   import {saveToLocal, loadFromLocal} from 'common/js/store'
   import split from 'components/split/split'
   import star from 'components/star/star'
@@ -84,6 +85,22 @@
       toggleFavorite (event) {
         this.favorite = !this.favorite
         saveToLocal(this.seller.id, 'favorite', this.favorite)
+      },
+      _initScroll () {
+        if (!this.scroll) {
+          this.scroll = new BScroll(this.$refs.seller, {
+            click: true
+          })
+        } else {
+          this.scroll.refresh()
+        }
+      }
+    },
+    watch: {
+      'seller' () {
+        this.$nextTick(() => {
+          this._initScroll()
+        })
       }
     },
     components: {
