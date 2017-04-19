@@ -34,7 +34,18 @@
         </div>
       </div>
       <split></split>
-      <div class="bulletin">公告</div>
+      <div class="bulletin">
+        <h1 class="title">公告与活动</h1>
+        <div class="content-wrapper">
+          <p class="content">{{ seller.bulletin }}</p>
+        </div>
+        <ul v-if="seller.supports" class="supports">
+          <li class="support-item" v-for="(item, index) in seller.supports">
+            <span class="icon" :class="classMap[seller.supports[index].type]"></span>
+            <span class="text">{{ seller.supports[index].description }}</span>
+          </li>
+        </ul>
+      </div>
       <split></split>
       <div class="pics">图片</div>
       <split></split>
@@ -65,6 +76,9 @@
       favoriteText () {
         return this.favorite ? '已收藏' : '收藏'
       }
+    },
+    created () {
+      this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
     },
     methods: {
       toggleFavorite (event) {
